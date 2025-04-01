@@ -13,7 +13,7 @@ Task Manager is a Flutter-based mobile application that helps users manage their
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/task-manager.git
+   git clone https://github.com/yourusername/task-manager.git](https://github.com/promitarjan/Task-Manager-App.git
    cd task-manager
    ```
 2. Install dependencies:
