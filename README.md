@@ -1,16 +1,38 @@
-# task_manager_new
+# Task Manager App
 
-A new Flutter project.
+## Overview
+Task Manager is a Flutter-based mobile application that helps users manage their tasks efficiently. The app includes user authentication, PIN verification, CRUD operations for task management, profile updates, and user registration.
 
-## Getting Started
+## Features
+- **User Authentication**: Secure login and registration system.
+- **PIN Verification**: Added security layer with PIN-based access.
+- **Task Management**: Create, Read, Update, and Delete (CRUD) tasks.
+- **Profile Management**: Users can update their profile details.
+- **User Registration**: New users can register with their credentials.
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
+2. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+3. Run the app:
+   ```sh
+   flutter run
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.17
+  fluttertoast: ^8.2.11
+  http: ^1.3.0
+  pin_code_fields: ^8.0.1
+  shared_preferences: ^2.5.2
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
