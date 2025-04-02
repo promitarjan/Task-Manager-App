@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task_manager_new/style/background.dart';
-import 'package:task_manager_new/utility/widget.dart';
+import 'package:task_manager_new/utility/widgets/verification_elements.dart';
 
 class emailVerification extends StatefulWidget {
   const emailVerification({super.key});

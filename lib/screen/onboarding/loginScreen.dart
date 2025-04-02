@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager_new/screen/onboarding/emailVerificationScreen.dart';
 import 'package:task_manager_new/screen/onboarding/registrationScreen.dart';
-
 import 'package:task_manager_new/style/background.dart';
-import 'package:task_manager_new/utility/widget.dart';
+import 'package:task_manager_new/utility/widgets/all_elements.dart';
+import 'package:task_manager_new/utility/widgets/navigation.dart';
 
 class loginScreen extends StatefulWidget {
   const loginScreen({super.key});

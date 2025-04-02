@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task_manager_new/style/background.dart';
-import 'package:task_manager_new/utility/widget.dart';
+import 'package:task_manager_new/utility/widgets/set_password_elements.dart';
 
 class setPassword extends StatefulWidget {
   const setPassword({super.key});

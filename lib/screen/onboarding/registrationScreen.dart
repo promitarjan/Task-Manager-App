@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task_manager_new/style/background.dart';
-import 'package:task_manager_new/utility/widget.dart';
+import 'package:task_manager_new/utility/widgets/reg_screen_elements.dart';
 
 class registrationScreen extends StatefulWidget {
   const registrationScreen({super.key});

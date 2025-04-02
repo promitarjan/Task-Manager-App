@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager_new/screen/onboarding/splashScreen.dart';
 import 'package:task_manager_new/style/style.dart';
-import 'package:task_manager_new/utility/widget.dart';
 
 void main() {
   runApp(TaskManager());
@@ -29,7 +29,7 @@ class _TaskManagerState extends State<TaskManager> {
           style: AppButtonStyles.appButtonStyle(),
         ),
       ),
-      home: Navigation(),
+      home: splashScreen(),
     );
   }
 
