@@ -27,7 +27,11 @@ class _registrationScreenState extends State<registrationScreen> {
               padding: EdgeInsets.all(30),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
-                child: regScreenElements(height: height, width: width),
+                child: regScreenElements(
+                  height: height,
+                  width: width,
+                  title: 'Join With Us',
+                ),
               ),
             ),
           ),

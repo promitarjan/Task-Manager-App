@@ -6,10 +6,12 @@ class regScreenElements extends StatefulWidget {
     super.key,
     required this.height,
     required this.width,
+    required this.title,
   });
 
   final double height;
   final double width;
+  final String title;
 
   @override
   State<regScreenElements> createState() => _regScreenElementsState();
@@ -26,7 +28,7 @@ class _regScreenElementsState extends State<regScreenElements> {
         children: [
           SizedBox(height: 60),
           Text(
-            "Join With Us",
+            widget.title,
             style: AppTextStyles.head1Text(AppColors.colorDarkBlue),
           ),
 
@@ -36,9 +38,9 @@ class _regScreenElementsState extends State<regScreenElements> {
             "Last Name",
             "Mobile Number",
           ]) ...[
-            SizedBox(height: 20),
+            SizedBox(height: 12),
             TextFormField(decoration: InputDecoration(hintText: i)),
-            SizedBox(height: 20),
+            SizedBox(height: 12),
           ],
 
           SizedBox(height: 20),

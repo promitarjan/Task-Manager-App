@@ -7,6 +7,47 @@ class listView extends StatelessWidget {
   final String status;
   final Color bgcolor;
 
+  void _showEditDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Edit Task'),
+          content: Text('Do you want to edit this task?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                // Add your edit logic here
+              },
+              child: Text('Edit'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _showDeleteDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Delete Task'),
+          content: Text('Do you want to delete this task?'),
+          actions: [
+            TextButton(onPressed: () {}, child: Text('Cancel')),
+            TextButton(onPressed: () {}, child: Text('Delete')),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -63,23 +104,26 @@ class listView extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          side: BorderSide(
-                            color: AppColors.colorBlue,
-                            width: 2.0,
-                          ),
+                          side: BorderSide(color: bgcolor, width: 2.0),
                         ),
                         Wrap(
                           children: [
-                            Icon(
-                              Icons.edit,
-                              color: AppColors.colorDarkBlue,
-                              size: 20,
+                            GestureDetector(
+                              onTap: () => _showEditDialog(context),
+                              child: Icon(
+                                Icons.edit,
+                                color: AppColors.colorDarkBlue,
+                                size: 20,
+                              ),
                             ),
                             SizedBox(width: 5),
-                            Icon(
-                              Icons.delete,
-                              color: AppColors.colorDarkBlue,
-                              size: 20,
+                            GestureDetector(
+                              onTap: () => _showDeleteDialog(context),
+                              child: Icon(
+                                Icons.delete,
+                                color: AppColors.colorDarkBlue,
+                                size: 20,
+                              ),
                             ),
                           ],
                         ),
